@@ -62,7 +62,7 @@ public class AuthService {
         return passwordEncoder.encode(password);
     }
 
-    public void verifyAccount(String token) {
+     public void verifyAccount(String token) {
         Optional<VerificationToken> verificationTokenOptional = verificationTokenRepository.findByToken(token);
         verificationTokenOptional.orElseThrow(() -> new SpringRedditException("Invalid Token"));
         fetchUserAndEnable(verificationTokenOptional.get());
