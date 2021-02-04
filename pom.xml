@@ -86,6 +86,17 @@
 			<version>${org.mapstruct.version}</version>
 			<scope>compile</scope>
 		</dependency>
+		<!-- Spring Fox Dependencies -->
+		<dependency>
+			<groupId>io.springfox</groupId>
+			<artifactId>springfox-swagger2</artifactId>
+			<version>2.9.2</version>
+		</dependency>
+		<dependency>
+			<groupId>io.springfox</groupId>
+			<artifactId>springfox-swagger-ui</artifactId>
+			<version>2.9.2</version>
+		</dependency>
 		<!-- For Displaying time as Relative Time Ago ("Posted 1 Day ago"),
          as this is a Kotlin library, we also need Kotlin runtime libraries-->
 		<dependency>
@@ -103,11 +114,6 @@
 			<artifactId>kotlin-test-junit</artifactId>
 			<version>${kotlin.version}</version>
 			<scope>test</scope>
-		</dependency>
-		<dependency>
-			<groupId>junit</groupId>
-			<artifactId>junit</artifactId>
-			<version>4.12</version>
 		</dependency>
 		<dependency>
 			<groupId>org.junit.jupiter</groupId>
